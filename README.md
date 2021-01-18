@@ -4,7 +4,7 @@ This page provides quick access to Adobe Target functions/commands that are used
 
 This also covers some Profile Scripts examples that may prove useful for building audiences.
 
-Besides, I have also added links to some help-articles and blogs that contain key tips to kickstart your Adobe Target journey.
+I have also added links to some help-articles and blogs that contain key tips to kickstart your Adobe Target journey.
 
 | Activity      | Function/Command | Variation | Syntax |
 | -----------   | -----------      | --------- | ------ |
