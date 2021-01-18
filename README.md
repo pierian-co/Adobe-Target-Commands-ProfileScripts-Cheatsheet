@@ -16,7 +16,7 @@ This page provides quick access to Adobe Target functions/commands that are used
 | Profile script code for checking a param and mbox name | Profile scripts |  | <pre>if (mbox.name == 'target-global-mbox' <br> && mbox.param('YOUR_PARAM_NAME') !== undefined <br> && mbox.param('YOUR_PARAM_NAME') !== null){ <br> s = mbox.param('YOUR_PARAM_NAME'); <br> }</pre> |
 | Setting a Profile script code for reading Page-URL | Profile scripts |  | <pre>if (page.url != "") {<br>  var url = "" + page.url.toLowerCase();<br>  if (url.indexOf("PARAM1") >-1 && <br>    url.indexOf("PARAM2") >-1) { <br>    return "true"; <br>   }<br> }</pre> |
 | Reading a cookie value within Profile script | Profile scripts |  | <pre>var cookies = user.header('cookie');<br>if (cookies.indexOf('YOUR_COOKIE_VAL') >= 0){<br>  return "true";<br>}<br>else{<br>  return "false";<br>}</pre> |
-| Using Profile script to randomise traffic beyween 2 experiences using Profile script | Profile scripts |  | <pre>if (!user.get('AB_Test_Groups')) {<br> var random_number=Math.floor(Math.random()*99);<br>if(random_number <= 49){<br> return 'GroupA';<br>}<br>else{<br>  return 'GroupB';<br>}</pre> |
+| Using Profile script to randomise traffic beyween 2 experiences using Profile script | Profile scripts |  | <pre>if (!user.get('AB_Test_Groups')) {<br> var random_number=Math.floor(Math.random()*99);<br>if(random_number <= 49){<br>   return 'GroupA';<br>  }<br>else{<br>    return 'GroupB';<br>  }<br>}</pre> |
 
 
 
