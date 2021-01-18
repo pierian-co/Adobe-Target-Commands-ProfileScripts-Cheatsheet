@@ -18,6 +18,3 @@ This page provides quick access to Adobe Target functions/commands that are used
 | Reading a cookie value within Profile script | Profile scripts |  | <pre>var cookies = user.header('cookie');<br>if (cookies.indexOf('YOUR_COOKIE_VAL') >= 0){<br>  return "true";<br>}<br>else{<br>  return "false";<br>}</pre> |
 | Using Profile script to randomise traffic beyween 2 experiences using Profile script | Profile scripts |  | <pre>if (!user.get('AB_Test_Groups')) {<br> var random_number=Math.floor(Math.random()*99);<br> if(random_number <= 49){<br>   return 'GroupA';<br> }<br> else{<br>    return 'GroupB';<br>  }<br>}</pre> |
 
-
-
-}
