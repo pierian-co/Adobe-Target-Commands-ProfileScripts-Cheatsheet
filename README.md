@@ -13,8 +13,6 @@ I have also added links to some help-articles and blogs that contain key tips to
 | Pass params to mbox before Adobe Target call      | targetPageParams()       | 3. JSON (values do not need to be URL encoded) | <pre>targetPageParams = function() {<br>  return {<br>    "a": 1, <br>    "b": 2, <br>    "profile": {<br>      "age": 26, <br>       "country": {<br>          "city": "San Francisco" <br>        } <br>      } <br>    }; <br> };</pre> |
 | Pass params to all mbox calls on a page | targetPageParamsAll()       | Variations same as targetPageParams() | <pre>targetPageParams = function() {<br>  return {<br>    "a": 1, <br>    "b": 2, <br>    "profile": {<br>      "age": 26, <br>       "country": {<br>          "city": "San Francisco" <br>        } <br>      } <br>    }; <br> };</pre> |
 | Pass params to Adobe Target when an event occurs | trackEvent() | Variations same as targetPageParams() | <pre>adobe.target.trackEvent({<br> "mbox": "clicked-cta",<br> "params": {<br>   "param1": "value1" <br>  } <br> });</pre> |
-
-
 | Passing Profile Attributes  to the HTML offer |  | profile attribute  | [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html) |
 | Read a Target attribute in Experience offer code to dynamically populate experience |  | profile attribute  | <pre>var a = “${user.YOUR_PROFILE_ATTRIBUTE}”;</pre> |
 | Read a Target attribute in Experience offer code to dynamically populate experience |  | defining a default value | <pre>var a = '${user.YOUR_PROFILE_ATTRIBUTE default="DEFAULT_VALUE"}';</pre> |
