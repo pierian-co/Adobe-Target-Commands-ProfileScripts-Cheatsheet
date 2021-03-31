@@ -8,7 +8,7 @@ I have also added links to some help-articles and blogs that contain key tips to
 
 | Activity      | Function/Command | Variation | Syntax |
 | -----------   | -----------      | --------- | ------ |
-| Adobe Exp Cloud SDK - Taregt APIs | Mobile App Perosonalisation |  | [List of Target APIs for Mobile SDK] (https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference) |
+| Adobe Exp Cloud SDK - Taregt APIs | Mobile App Perosonalisation |  | [List of Target APIs for Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference) |
 | Pass params to mbox before a single Adobe Target call      | targetPageParams()       | 1. Ampersand-delimited list (values must be URL encoded) | <pre>function targetPageParams(){<br/> return "param1=value1&param2=value2&p3=hello%20world";<br/>}</pre> |
 | Pass params to mbox before Adobe Target call      | targetPageParams()       | 2. Array (values do not need to be URL encoded) | <pre>targetPageParams = function(){<br>  return ["a=1", "b=2", "c=hello world"]; <br>};</pre> |
 | Pass params to mbox before Adobe Target call      | targetPageParams()       | 3. JSON (values do not need to be URL encoded) | <pre>targetPageParams = function() {<br>  return {<br>    "a": 1, <br>    "b": 2, <br>    "profile": {<br>      "age": 26, <br>       "country": {<br>          "city": "San Francisco" <br>        } <br>      } <br>    }; <br> };</pre> |
