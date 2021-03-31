@@ -1,6 +1,6 @@
 # Adobe Target Commands Cheat Sheet
 
-This page provides quick access to Adobe Target functions/commands that are used commonly. 
+This page provides quick access to Adobe Target functions/commands/links that are used commonly. 
 
 This also covers some Profile Scripts examples that may prove useful for building audiences.
 
